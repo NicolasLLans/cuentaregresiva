@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Launch countdown timer</title>
 
@@ -26,14 +27,16 @@
 <body>
   <h1>Cuenta regresiva</h1>
   <p>La cuenta regresiva finaliza en:</p>
-  <div id="days"></div>
-  <div id="hours"></div>
-  <div id="minutes"></div>
-  <div id="seconds"></div>
+  <div class="contenedor">
+    <div id="days">0</div>
+    <div id="hours">0</div>
+    <div id="minutes">0</div>
+    <div id="seconds">0</div>
+  </div>
 
   <p>Ingresa la nueva fecha de finalización:</p>
-    <input type="datetime-local" id="newEndDate">
-    <button id="updateEndDateButton">Actualizar fecha</button>
+  <input type="datetime-local" id="newEndDate">
+  <button id="updateEndDateButton">Actualizar fecha</button>
 
 
   <script src="script.js"></script>

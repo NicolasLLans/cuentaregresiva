@@ -1,0 +1,23 @@
+body {
+      display: grid;
+      place-items: center;
+      background-color: rgb(33, 19, 46);
+      background-image: url(images/pattern-hills.svg), url(images/bg-stars.svg);
+      background-blend-mode: normal;
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-size: contain;
+
+      height: 100vh;
+      width: auto;
+      margin: 0;
+}
+
+.contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 5em;
+      color: #960c56;
+}
