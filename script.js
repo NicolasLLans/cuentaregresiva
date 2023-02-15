@@ -18,8 +18,8 @@ function updateCountdown() {
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("days").innerHTML = days.toString().padStart(2, "0");
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("hours").innerHTML = hours.toString().padStart(2, "0");
+  document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, "0");
   document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, "0");
 }
 
