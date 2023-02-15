@@ -1,12 +1,13 @@
 body {
       display: grid;
       place-items: center;
-      background-color: rgb(33, 19, 46);
+      background-color: hsl(234, 17%, 12%);
       background-image: url(images/pattern-hills.svg), url(images/bg-stars.svg);
       background-blend-mode: normal;
       background-repeat: no-repeat;
       background-position-y: bottom;
       background-size: contain;
+      color: azure;
 
       height: 100vh;
       width: auto;
@@ -16,8 +17,83 @@ body {
 .contenedor {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      font-size: 5em;
-      color: #960c56;
+      font-size: 5rem;
+      font-weight: 700;
+      font-family: 'Red Hat Text', sans-serif;
+      color: hsl(345, 95%, 68%);
+      width: 100%;
+}
+
+.card {
+      display: grid;
+      place-items: center;
+      margin: 1%;
+      padding: 2%;
+
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+      display: grid;
+      place-content: center;
+      width: 1.5em;
+      height: 100%;
+      background-color: hsl(235, 16%, 14%);
+      border-radius: 15%;
+      padding: 8%;
+}
+
+@media (max-width:900px) {
+      .contenedor {
+            font-size: 2rem;
+
+      }
+      p {
+            font-size: 12px;
+      }
+}
+
+@media (max-width:400px) {
+      .contenedor {
+            font-size: 1.3rem;
+
+      }
+      p {
+            font-size: 10px;
+      }
+}
+
+p {
+      font-size: 0.8rem;
+      margin-top: 35px;
+      color: hsl(0, 0%, 100%);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+}
+input{
+      width: 50%;
+      height: 25px;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 5px;
+      padding: 0 5px;
+      border: 1px solid hsl(345, 95%, 68%);
+      font-family: 'Red Hat Text', sans-serif;
+}
+button{
+      padding: 20px 60px;
+      background-color:hsl(235, 16%, 14%) ;
+      color: hsl(345, 95%, 68%);
+      border-radius: 5px;
+      border: 1px solid hsl(345, 95%, 68%);
+
+      font-size: 16px;
+}
+h1{
+      font-family: 'Red Hat Text';
+      font-weight: 700;
 }

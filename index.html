@@ -8,6 +8,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Launch countdown timer</title>
 
@@ -28,10 +31,24 @@
   <h1>Cuenta regresiva</h1>
   <p>La cuenta regresiva finaliza en:</p>
   <div class="contenedor">
-    <div id="days">0</div>
-    <div id="hours">0</div>
-    <div id="minutes">0</div>
-    <div id="seconds">0</div>
+    <div class="card">
+      <div id="days">
+        0
+      </div>
+      <p>Days</p>
+    </div>
+    <div class="card">
+      <div id="hours">0</div>
+      <p>Hours</p>
+    </div>
+    <div class="card">
+      <div id="minutes">0</div>
+      <p>Minutes</p>
+    </div>
+    <div class="card">
+      <div id="seconds">0</div>
+      <p>Seconds</p>
+    </div>
   </div>
 
   <p>Ingresa la nueva fecha de finalización:</p>
@@ -42,14 +59,14 @@
   <script src="script.js"></script>
   We're launching soon
 
-  Days
-  Hours
-  Minutes
-  Seconds
+
+
+
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Nicolas Lanselota</a>.
   </div>
 </body>
 
